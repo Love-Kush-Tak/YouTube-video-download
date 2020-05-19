@@ -12,7 +12,7 @@ def downloadVid():
     yt = YouTube(str(string))
     videos = yt.streams.first()
     destination=str(input("Enter your destination"))
-	#enter the desination where you want to save the video
+    #enter the desination where you want to save the video
     videos.download(destination)
     print(yt.title+"\n Ha been downloaded")
 root=tk.Tk()
